@@ -293,6 +293,15 @@
         .btn-alt::before {
             background: #ff00cc;
         }
+
+        .btn-alt2 {
+            border-color: #ffc400;
+            color: #ffc400;
+        }
+        
+        .btn-alt2::before {
+            background: #ffc400;
+        }
         
         /* Comparison Section */
         .comparison-section {
@@ -660,6 +669,20 @@
             font-size: 1.2em; /* Slightly smaller on mobile */
             }
         }
+
+       .eta-tag {
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-left: 8px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover .eta-tag {
+            background: rgba(0, 0, 0, 0.4);
+        }
         
     </style>
 </head>
@@ -693,9 +716,10 @@
         
         <div class="controls">
             <button class="btn"><i class="fas fa-download"></i> arXiv </button>
-            <button class="btn btn-alt"><i class="fas fa-code"></i> code </button>
+            <button class="btn btn-alt"><i class="fas fa-code"></i> code <span class="eta-tag">ETA: mid Oct</span></button>
+            <button class="btn btn-alt2">🤗 &nbsp demo <span class="eta-tag">ETA: late Oct</span></button>
         </div>
-        
+                
       
         <div class="abstract">
             <h3 class="abstract-title">Abstract</h3>
